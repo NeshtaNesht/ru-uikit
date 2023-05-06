@@ -1,0 +1,35 @@
+.splitter-gutter {
+  flex-grow: 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: col-resize;
+  &_vertical {
+    cursor: row-resize;
+  }
+}
+
+.splitter-gutter-handle {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  &:hover {
+    background-color: #e3e3e3;
+  }
+}
+.splitter-panel {
+  flex-grow: 1;
+}
+
+.splitter {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.splitter-vertical {
+  flex-direction: column;
+}
+
+.splitter-horizontal {
+  flex-direction: row;
+}
